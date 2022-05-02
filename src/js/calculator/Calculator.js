@@ -2,6 +2,19 @@ class Calculator {
   plus = (a, b) => {
     return a + b;
   };
-}
 
-export default Calculator;
+  minus = (a, b) => {
+    return a - b;
+  };
+
+  multiply = (a, b) => {
+    return a * b;
+  };
+
+  divide = (a, b) => {
+    if (!b){
+      throw new Error("ZeroDivisionError");
+    }
+    return a / b;
+  };
+}
