@@ -15,4 +15,5 @@ class Calculator {
     callback(...args);
   };
 }
-}
+
+export default Calculator;
