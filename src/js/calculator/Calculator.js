@@ -12,8 +12,9 @@ class Calculator {
   };
 
   divide = (a, b) => {
+    if (!b){
+      throw new Error("ZeroDivisionError");
+    }
     return a / b;
   };
 }
-
-export default Calculator;
