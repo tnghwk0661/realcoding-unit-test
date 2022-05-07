@@ -1,13 +1,8 @@
 import Calculator, {DivideZeroError} from "../js/calculator/Calculator";
 describe("test div.", () => {
-<<<<<<< HEAD
-  test("div / 0 ", ()=>{
-    expect(11 / 0).toBeInstanceOf(DivideZeroError);
-=======
   test("11 / 0 ", ()=>{
     const calculator = new Calculator();
     expect(() => calculator.divide(11, 0)).toThrow("ZeroDivisionError");
->>>>>>> test/calculator-divide
   });
   test("6 / 3 == 2.", () => {
     const calculator = new Calculator();
