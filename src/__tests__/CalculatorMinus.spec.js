@@ -41,5 +41,4 @@ describe("사칙연산 뺄셈 테스트.", () => {
     const calculator = new Calculator();
     expect(calculator.minus(987654, 654)).toEqual(987000);
   });
-  
 });

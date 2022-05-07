@@ -2,7 +2,7 @@ import Calculator, {DivideZeroError} from "../js/calculator/Calculator";
 describe("test div.", () => {
   test("11 / 0 ", ()=>{
     const calculator = new Calculator();
-    expect(() => calculator.divide(11, 0)).toThrow("ZeroDivisionError");
+    expect(() => calculator.divide(11, 0)).toThrowError(DivideZeroError);
   });
   test("6 / 3 == 2.", () => {
     const calculator = new Calculator();
