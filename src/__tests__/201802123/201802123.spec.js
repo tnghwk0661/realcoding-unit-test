@@ -1,4 +1,4 @@
-import Calculator from "../js/calculator/Calculator";
+import Calculator from "../../js/calculator/Calculator";
 
 describe("음수 양수 판단", () => {
   const calculator = new Calculator();
